@@ -1,8 +1,7 @@
-
-from fastapi import FastAPI, HTTPException
-from pydantic import BaseModel, Field
 from typing import List, Optional
 from uuid import uuid4
+from fastapi import FastAPI, HTTPException
+from pydantic import BaseModel, Field
 
 app = FastAPI()
 
@@ -24,7 +23,7 @@ class PersonInput(BaseModel):
 class Person(PersonInput):
     id: str
 
-### updateperson?????? how can i do this without id??
+### updatePerson model
 class PersonUpdate(BaseModel):
     name: Optional[str] = None
     email: Optional[str] = None
@@ -39,7 +38,7 @@ class PersonUpdate(BaseModel):
 ## DB FOR NOW
 people = []
 
-
+### CREATE
 @app.post("/person", response_model=Person)
 def create_person(data: PersonInput):
     newPerson = Person(
@@ -49,12 +48,14 @@ def create_person(data: PersonInput):
     people.append(newPerson)
     return newPerson
 
+
+#### READ
 @app.get("/")
 def get_people():
     return people
     
 
-### Update Person
+### UPDATE
 @app.put("/person/{person_id}")
 def change_info(person_id: str, new_person: PersonUpdate):
     for index, person in enumerate(people):
@@ -68,7 +69,7 @@ def change_info(person_id: str, new_person: PersonUpdate):
     raise HTTPException(status_code=404, detail="Person not found")
 
 
-### Delete Person
+### DELETE
 @app.delete("/person/{person_id}")
 def delete_person(person_id: str):
     for index, person in enumerate(people):
