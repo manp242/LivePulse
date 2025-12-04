@@ -1,0 +1,15 @@
+.landing-container {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.landing-btn {
+  margin-top: 1.5rem;
+  background: #4f46e5;
+  color: white;
+  padding: 0.9rem 1.6rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+}

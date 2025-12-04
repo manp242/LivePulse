@@ -1,0 +1,22 @@
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 4rem auto;
+  gap: 1rem;
+}
+
+.dashboard-container input {
+  padding: 0.7rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.dashboard-container button {
+  padding: 0.8rem;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
