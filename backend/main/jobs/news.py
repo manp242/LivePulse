@@ -6,11 +6,7 @@ load_dotenv()
 
 newsapi = NewsApiClient(api_key=os.getenv('NEWS_API'))
 
-top_headlines = newsapi.get_top_headlines(q='ICE',
-                                          sources='bbc-news,the-verge',
-                                          category='general',
-                                          language='en',
-                                          country='us')
+sources = newsapi.get_top_headlines(q="meta", country="us", category="technology" )
 
+print(sources)
 
-print(top_headlines)

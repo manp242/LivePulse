@@ -1,0 +1,26 @@
+{
+  "status": "ok",
+  "totalResults": 2,
+  "articles": [
+    {
+      "source": { "id": null, "name": "Dexerto" },
+      "author": "Liam Mackay",
+      "title": "All weapon buffs & nerfs in Warzone & Black Ops 7 Season 1 - Dexerto",
+      "description": "Here are all of the weapon buffs and nerfs in Warzone and Black Ops 7’s Season 1 update, which are set to completely change the meta.",
+      "url": "https://www.dexerto.com/call-of-duty/all-weapon-buffs-nerfs-in-warzone-black-ops-7-season-1-3289534/",
+      "urlToImage": "https://www.dexerto.com/cdn-image/wp-content/uploads/2025/12/03/weapons-buffs-nerfs-warzone-black-ops-7-season-1.jpg",
+      "publishedAt": "2025-12-03T21:35:58Z",
+      "content": "Warzone and Black Ops 7 finally integrate in Season 1..."
+    },
+    {
+      "source": { "id": "bloomberg", "name": "Bloomberg" },
+      "author": "Mark Gurman",
+      "title": "Apple Design Executive Alan Dye Poached by Meta in Major Coup - Bloomberg.com",
+      "description": "Meta Platforms Inc. has poached Apple Inc.’s most prominent design executive...",
+      "url": "https://www.bloomberg.com/news/articles/2025-12-03/apple-design-executive-alan-dye-poached-by-meta-in-major-coup",
+      "urlToImage": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i2cnSC_J5rh8/v2/1200x800.jpg",
+      "publishedAt": "2025-12-03T19:30:22Z",
+      "content": "Meta Platforms Inc"
+    }
+  ]
+}
